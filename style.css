@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: bisque;
+    
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: #e68900;
+}
+
+/* Mission Section */
+.mission {
+    padding: 50px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    
+}
+
+.mission p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+.icon h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #f1f1f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.project .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project .btn:hover {
+    background-color: #004494;
+}
+
+/* Success Stories Section */
+.success-stories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Volunteer Section */
+.volunteer {
+    background-color: #0056b3;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.volunteer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.volunteer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.volunteer .btn {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.volunteer .btn:hover {
+    background-color: #e68900;
+}
+
+/* Donation Section */
+.donate {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.donate h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.donate p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.donate .btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.donate .btn:hover {
+    background-color: #e68900;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .icon-container, .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .icon, .project {
+        max-width: 100%;
+    }
+}
